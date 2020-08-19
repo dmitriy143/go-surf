@@ -1,0 +1,42 @@
+section.holder
+  .container
+    .title
+      div
+        span.wow.fadeInLeft(data-wow-offset="300") travel
+        h3 travel
+    .holder__slider
+      - for(let i=0; i<8; i++)
+        .holder__slider-item.holder-slider
+          .holder-slider__head(style="background-image: url('img/travel-slider-bg.png')")
+            .holder-slider__subtitle
+              .subtitile.wow.fadeInRight(data-wow-offset="400")
+                .headline-left Shore
+                .subtitile__head Airlie Beach 
+                  span |
+                  |  Australia
+          .holder-slider__descr.wow.fadeInUp(data-wow-offset="400" style="background-image: url('img/plan.png')")
+            .descr
+              .headline-right Airline
+              .descr__head Virgin Australia
+                img(src="img/avia-logo.svg" alt="")
+          .holder-slider__info
+            .holder-slider__info-item.wow.fadeInUp(data-wow-offset="400" data-wow-delay=".3s")
+              .holder-slider__info-subtitle Destination
+              .holder-slider__info-title Queensland<br> Australia
+            .holder-slider__info-item.wow.fadeInUp(data-wow-offset="400" data-wow-delay=".6s")
+              .holder-slider__info-subtitle Distance
+              .holder-slider__info-title 7,065 Miles
+            .holder-slider__info-item.wow.fadeInUp(data-wow-offset="400" data-wow-delay=".9s")
+              .holder-slider__info-subtitle holder Time
+              .holder-slider__info-title 23 Hours<br> 5 Minutes
+            .holder-slider__info-item.wow.fadeInUp(data-wow-offset="400" data-wow-delay="1.2s")
+              .holder-slider__info-subtitle Pricing
+              .holder-slider__info-title $1,976 USD 
+                span.holder-pricing__span Round Trip
+          .holder-slider__btn
+            if i===0
+              a.btn.wow.fadeInUp(href="#" data-wow-delay="1.5s") Book
+                span Flight
+            else
+              a.btn(href="#") Book
+                span Flight

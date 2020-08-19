@@ -1,0 +1,21 @@
+@media (max-width: 1040px) {
+  .quantity-button.quantity-up {
+    right: auto;
+    left: 25px;
+  }
+
+  .quantity-button.quantity-down {
+    right: auto;
+  }
+
+  .sleep .holder-slider__descr {
+    background-position: right 10px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .holder-slider__descr .descr__head .holder__star-list {
+    right: 85px;
+    top: 28px;
+  }
+}

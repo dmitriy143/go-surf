@@ -1,0 +1,120 @@
+section.surf
+  div.title
+    div 
+      span.wow.fadeInLeft(data-wow-offset="300") surf
+      h3 surf
+  div.surf__subtitle
+    div.subtitile.wow.fadeInRight(data-wow-offset="400")
+      div.headline-left Current location
+      div.subtitile__head California 
+        span |
+        |  USA
+  div.slider-map.wow.zoomInDown(data-wow-offset="350" data-wow-duration="1.5s")
+    -
+      let sliderMap = [{
+        class: 'slider-dots--1',
+        classWow: 'wow fadeInUpBig',
+        dataDelay: '1s',
+        classContent: 'wow fadeIn',
+        dataContent: '2.5s'},
+      {class: 'slider-dots--2',
+      classWow: 'wow fadeInUpBig',
+      dataDelay: '1.2s'},
+      {class: 'slider-dots--3',
+      classWow: 'wow fadeInUpBig',
+      dataDelay: '1.3s'},
+      {class: 'slider-dots--4',
+      classWow: 'wow fadeInUpBig',
+      dataDelay: '1.4s'},
+      {class: 'slider-dots--5',
+      classWow: 'wow fadeInUpBig',
+      dataDelay: '1.5s'},
+      {class: 'slider-dots--6',
+      classWow: 'wow fadeInUpBig',
+      dataDelay: '1.6s'},
+      {class: 'slider-dots--7',
+      classWow: 'wow fadeInUpBig',
+      dataDelay: '1.7s'},
+      {class: 'slider-dots--8',
+      classWow: 'wow fadeInUpBig',
+      dataDelay: '1.8s'}]
+    each item in sliderMap
+      div.slider-dots(class= item.class)
+        div.slider-dots__circle(class= item.classWow data-wow-delay= item.dataDelay)
+        div.slider-dots__content(class= item.classContent data-wow-delay= item.dataContent)
+          div.slider-dots__content-row
+            div.slider-dots__content-head
+              div.slider-dots__content-titile Airlie Beach
+              div.slider-dots__content-subtitile Australia
+            a.slider-dots__content-link(href="#")
+              img(src="img/arrow-right.svg" alt="")
+          div.slider-dots__content-row
+            div.slider-dots__content-item
+              img(src="img/surf-icon.svg" alt="")
+              div.slider-dots__content-number 9 - 13
+              div.slider-dots__content-name Surf (FT)
+            div.slider-dots__content-item
+              img(src="img/water-icon.svg" alt="")
+              div.slider-dots__content-number +2.3
+              div.slider-dots__content-name Tide (FT)
+            div.slider-dots__content-item
+              img(src="img/wind-icon.svg" alt="")
+              div.slider-dots__content-number 4 SE
+              div.slider-dots__content-name Wind (KTS)
+  div.surf-slider
+    -
+      let surfSlider = [{
+        bg: 'background-image: url("img/slider-1.jpg")',
+        title: 'Malibu Beach',
+        location: 'California',
+        country: 'USA',
+        class: 'wow fadeInUp',
+        offset: '400',
+        delay: '0.3s'},
+      {bg: 'background-image: url("img/slider-2.jpg")',
+        title: 'Airlie Beach',
+        location: 'Queensland',
+        country: 'Australia',
+        class: 'wow fadeInUp',
+        offset: '400',
+        delay: '0.6s'},
+      {bg: 'background-image: url("img/slider-3.jpg")',
+        title: 'Cloud Nine',
+        location: 'Siargao',
+        country: 'Philippines',
+        class: 'wow fadeInUp',
+        offset: '400',
+        delay: '0.9s'},
+      {bg: 'background-image: url("img/slider-4.jpg")',
+        title: 'Vieux Boucau',
+        location: 'Hossegor',
+        country: 'France',
+        class: 'wow fadeInUp',
+        offset: '400',
+        delay: '1.2s'},
+      {bg: 'background-image: url("img/slider-1.jpg")',
+        title: 'Malibu Beach',
+        location: 'California',
+        country: 'USA'},
+      {bg: 'background-image: url("img/slider-2.jpg")',
+        title: 'Airlie Beach',
+        location: 'Queensland',
+        country: 'Australia'},
+      {bg: 'background-image: url("img/slider-3.jpg")',
+        title: 'Cloud Nine',
+        location: 'Siargao',
+        country: 'Philippines'},
+      {bg: 'background-image: url("img/slider-4.jpg")',
+        title: 'Vieux Boucau',
+        location: 'Hossegor',
+        country: 'France'}]
+    each item in surfSlider
+      .surf-box
+        .surf-box__wrapper(style= item.bg class= item.class data-wow-offset= item.offset data-wow-delay= item.delay)
+          .surf-box__inner
+            .surf-box__inner-titile= item.title
+            .surf-box__inner-location= item.location
+              span= '|' + item.country
+            .surf-box__inner-btn
+              a.btn(href="#") View
+                span Surf

@@ -1,0 +1,54 @@
+section.shop
+  div.title
+    div
+      span.wow.fadeInLeft(data-wow-offset="300") shop
+      h3 shop
+  .shop__slider
+    -for(let i=0; i<2; i++)
+      .shop__slider-item
+        .shop__slider-inner
+          .shop__slider-info
+            .descr
+              .headline-right Style
+              .descr__head-shop North Nugget TT Surfboard
+            .shop__slider-price
+              ul.shop__star-list.star-list
+                - for(let i = 0; i < 5; i++)
+                  li
+                    img(src="img/star.png" alt="")
+              | $799 
+              sup 99
+            .shop__slider-btn
+              a.btn(href="#") Drop
+                span In
+          .shop__slider-content
+            .surfboard.wow.fadeInUp(data-wow-offset="400")
+              img(src="img/surfboard.png" alt="")
+              .surfboard-box.surfboard__position--1
+                .surfboard-box__circle
+                  .circle__row
+                  .circle__row
+                .surfboard-box__content Double Concave with Vee Shape low point
+              .surfboard-box.surfboard__position--2
+                .surfboard-box__circle
+                  .circle__row
+                  .circle__row
+                .surfboard-box__content Double Concave with Vee Shape low point
+              .surfboard-box.surfboard__position--3
+                .surfboard-box__circle
+                  .circle__row
+                  .circle__row
+                .surfboard-box__content Double Concave with Vee Shape low point
+            .shop__extras.wow.fadeInUp
+              .shop__extrax-titile Extras
+              .shop__extras-inner
+                .shop__extras-box
+                  .shop__extras-img
+                    img(src="img/wax.png" alt="")
+                  .shop__extras-name Sex Wax
+                  .shop__extras-price $24.99
+                .shop__extras-box
+                  .shop__extras-img
+                    img(src="img/bracelet.png" alt="")
+                  .shop__extras-name Pura Vida
+                  .shop__extras-price $27.99
